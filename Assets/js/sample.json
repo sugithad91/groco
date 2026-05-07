@@ -1,0 +1,32 @@
+[
+    {
+    "id": "1","name": "Fresh Onion","price": "$4.99 - $10.99",
+    "img": "./Assets/images/p1.PNG",
+    "category": "Vegetable"
+    },
+   {
+    "id": "2","name": "Fresh Orange","price": "$4.99 - $10.99",
+    "img": "./Assets/images/p2.PNG",
+    "category": "Fruits"
+    },
+     {
+    "id": "3","name": "Fresh Carror","price": "$4.99 - $10.99",
+    "img": "./Assets/images/p3.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "4","name": "Fresh Green Apple","price": "$4.99 - $10.99",
+    "img": "./Assets/images/p4.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "5","name": "Fresh Watermelon","price": "$4.99 - $10.99",
+    "img": "./Assets/images/p5.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "6","name": "Fresh Brinjal","price": "$4.99 - $10.99",
+    "img": "./Assets/images/p6.PNG",
+    "category": "Vegetable"
+    }
+]

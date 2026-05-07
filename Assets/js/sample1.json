@@ -1,0 +1,62 @@
+[
+    {
+    "id": "1","name": "Fresh Onion","price": "$8.99",
+    "img": "./Assets/images/p1.PNG",
+    "category": "Vegetable"
+    },
+   {
+    "id": "2","name": "Fresh Orange","price": "$8.99",
+    "img": "./Assets/images/p2.PNG",
+    "category": "Fruits"
+    },
+     {
+    "id": "3","name": "Fresh Carror","price": "$8.99",
+    "img": "./Assets/images/p3.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "4","name": "Fresh Green Apple","price": "$8.99",
+    "img": "./Assets/images/p4.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "5","name": "Fresh Watermelon","price": "$8.99",
+    "img": "./Assets/images/p5.PNG",
+    "category": "Fruits"
+    },
+     {
+    "id": "6","name": "Fresh Brinjal","price": "$8.99",
+    "img": "./Assets/images/p6.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "7","name": "Garlic","price": "$8.99",
+    "img": "./Assets/images/catg2.PNG",
+    "category": "Vegetable"
+    },
+     {
+    "id": "8","name": "Fresh Meat","price": "$8.99",
+    "img": "./Assets/images/catg5.PNG",
+    "category": "Meat"
+    },
+     {
+    "id": "9","name": "Fresh Meat","price": "$8.99",
+    "img": "./Assets/images/catg3.PNG",
+    "category": "Meat"
+    },
+     {
+    "id": "10","name": "Fresh Cheese","price": "$8.99",
+    "img": "./Assets/images/catg4.PNG",
+    "category": "Dairy"
+    },
+     {
+    "id": "11","name": "Fresh butter","price": "$8.99",
+    "img": "./Assets/images/catg6.PNG",
+    "category": "Dairy"
+    },
+     {
+    "id": "12","name": "Fresh Curd","price": "$8.99",
+    "img": "./Assets/images/catg7.PNG",
+    "category": "Dairy"
+    }
+]

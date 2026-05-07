@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind CDN-->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--font awsome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <title>GroCo</title>
+     <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body >
+<nav class="bg-[#fce4d6] px-6 py-10 max-w-7xl mx-auto">
+  <div class="max-w-6xl mx-auto flex items-center justify-between lg:grid lg:grid-cols-3">
+    
+    <!--Logo -->
+    <a href="#" class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl justify-self-start">
+      <i class="fas fa-store text-[#ff7f50]"></i>
+      <span>GroCo</span>
+    </a>
+
+    <!-- Mobile Toggle  -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block text-[#2d5a27]">
+      <i class="fas fa-bars text-2xl"></i>
+    </label>
+
+    <!-- Menu -->
+    <div class="hidden peer-checked:flex flex-col lg:flex lg:flex-row lg:items-center w-full lg:w-auto absolute lg:static top-16 left-0 bg-[#fce4d6] lg:bg-transparent p-5 lg:p-0 z-10 justify-self-center">
+      <ul class="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 text-center text-xl">
+        <li><a href="./index.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Home</a></li>
+        <li><a href="./about.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">About Us</a></li>
+        <li><a href="./catogoried.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Categories</a></li>
+        <li><a href="./contact.html" class="text-[#ff7f50] border-b-2 border-[#ff7f50] font-medium">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Icons -->
+    <div class="hidden lg:flex items-center justify-end space-x-6 text-gray-800 text-lg justify-self-end">
+      <a href="" class="hover:text-[#ff7f50]"><i class="fas fa-search"></i></a>
+      <a href="./cart.html" class="hover:text-[#ff7f50]"><i class="fas fa-shopping-cart"></i></a>
+      <a href="./login.html" class="hover:text-[#ff7f50]"><i class="fas fa-user"></i></a>
+     
+    </div>
+  </div>
+</nav>
+
+<section class="bg-[#FEF5F4] pt-16 pb-8 max-w-7xl mx-auto">
+  <div class="container mx-auto px-6 flex flex-col items-center">
+    
+    <!-- Section Heading -->
+    <h2 class="text-[#2E7D32] text-3xl md:text-4xl font-bold mb-10 text-center">
+     Contact Us
+    </h2>
+
+    
+
+  </section>
+<section class="max-w-7xl mx-auto bg-[#FEF5F4] py-16 px-6 flex justify-center">
+  <div class="bg-[#fce4d6] w-full max-w-lg p-10 rounded-3xl shadow-sm">
+    
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <h2 class="text-[#ff7f50] text-3xl font-bold mb-2">Contact Us</h2>
+      <p class="text-[#2d5a27] font-medium">Let's get in touch!</p>
+    </div>
+
+    <!-- Form -->
+    <form id="contactForm" class="space-y-8 ">
+      
+      <!-- Name Field -->
+      <div class="relative border-b border-gray-400 focus-within:border-[#2d5a27] transition-colors">
+        <label class="block text-[#2d5a27] text-sm font-medium mb-1">Name</label>
+        <input type="text" class="w-full bg-transparent py-2 outline-none text-gray-700">
+      </div>
+
+      <!-- Email Field -->
+      <div class="relative border-b border-gray-400 focus-within:border-[#2d5a27] transition-colors">
+        <label class="block text-[#2d5a27] text-sm font-medium mb-1">Email</label>
+        <input type="email" class="w-full bg-transparent py-2 outline-none text-gray-700">
+      </div>
+
+      <!-- Contact Field -->
+      <div class="relative border-b border-gray-400 focus-within:border-[#2d5a27] transition-colors">
+        <label class="block text-[#2d5a27] text-sm font-medium mb-1">Contact</label>
+        <input type="tel" class="w-full bg-transparent py-2 outline-none text-gray-700">
+      </div>
+
+      <!-- Newsletter Checkbox -->
+      <div class="flex items-center space-x-3 pt-4">
+        <input type="checkbox" id="news" class="w-4 h-4 accent-[#2d5a27] cursor-pointer">
+        <label for="news" class="text-[#2d5a27] text-sm cursor-pointer">
+          I would like to receive newsletter
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-[#ff7f50] hover:bg-[#e66a3e] text-white font-bold py-4 rounded-2xl transition duration-300 shadow-md">
+        Submit
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<footer class="bg-[#fce4d6] py-16 px-6 max-w-7xl mx-auto">
+  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    
+    <!-- Column 1: Brand & Socials -->
+    <div>
+      <div class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl mb-6">
+        <i class="fas fa-store text-[#ff7f50]"></i>
+        <span>GroCo</span>
+      </div>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        Lorem ipsum Dolor, sit Amet Consectetur Adipisicing Elite Earum Aials Volupats Labore Est.Dolorum Tenetur!
+      </p>
+      <div class="flex space-x-3">
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Contact Info -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">contact Info</h3>
+      <ul class="space-y-4 text-gray-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-phone text-[#ff7f50]"></i>
+          <span>+123-9887-0987</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-phone text-[#ff7f50]"></i>
+          <span>+123-9887-0987</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-envelope text-[#ff7f50]"></i>
+          <span>gayauthi@gmail.com</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-map-marker-alt text-[#ff7f50]"></i>
+          <span>Mumbai, India - 9989876</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Quick Links -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">Quick Link</h3>
+      <ul class="space-y-4 text-gray-600">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#" >Products</a></li>
+        <li><a href="#" >Categories</a></li>
+        <li><a href="#" >Review</a></li>
+        <li><a href="#" >Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Newsletter -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">Newsletter</h3>
+      <p class="text-gray-600 mb-6">Subscribe For Latest Updates</p>
+      <input type="email" placeholder="Enter Your Email" class="w-full p-3 bg-[#e5d1c5] rounded-md focus:outline-none mb-4">
+      <button class="px-6 py-2 border-2 border-black rounded-md hover:bg-black hover:text-white transition-colors duration-300">
+        Subscribe
+      </button>
+    </div>
+
+  </div>
+</footer>
+
+<script src="./Assets/js/script.js"></script>
+</body>
+</html>

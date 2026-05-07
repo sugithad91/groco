@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind CDN-->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--font awsome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <title>GroCo</title>
+     <link rel="stylesheet" href="./Assets/css/style.css">
+     <style>
+        .productContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .productContainer div{
+            border: 1px solid orange;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        .productContainer div img{
+            width: 150px;
+            height: 150px;
+        }
+      
+ 
+        .cart-item {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+ 
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+        }
+        .closeIcon{
+            text-align: end;
+        }
+    </style>
+</head>
+<body >
+<nav class="bg-[#fce4d6] px-6 py-10 max-w-7xl mx-auto">
+  <div class="max-w-6xl mx-auto flex items-center justify-between lg:grid lg:grid-cols-3">
+    
+    <!--Logo -->
+    <a href="#" class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl justify-self-start">
+      <i class="fas fa-store text-[#ff7f50]"></i>
+      <span>GroCo</span>
+    </a>
+
+    <!-- Mobile Toggle  -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block text-[#2d5a27]">
+      <i class="fas fa-bars text-2xl"></i>
+    </label>
+
+    <!-- Menu -->
+    <div class="hidden peer-checked:flex flex-col lg:flex lg:flex-row lg:items-center w-full lg:w-auto absolute lg:static top-16 left-0 bg-[#fce4d6] lg:bg-transparent p-5 lg:p-0 z-10 justify-self-center">
+      <ul class="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 text-center text-xl">
+        <li><a href="./index.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Home</a></li>
+        <li><a href="./about.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">About Us</a></li>
+        <li><a href="./catogoried.html" class="text-[#ff7f50] border-b-2 border-[#ff7f50] font-medium">Categories</a></li>
+        <li><a href="./contact.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Icons -->
+    <div class="hidden lg:flex items-center justify-end space-x-6 text-gray-800 text-lg justify-self-end">
+      <a href="" class="hover:text-[#ff7f50]"><i class="fas fa-search"></i></a>
+      <a href="./cart.html" class="hover:text-[#ff7f50]" id="cartCount"><i class="fas fa-shopping-cart"></i></a>
+      <a href="./login.html" class="hover:text-[#ff7f50]"><i class="fas fa-user"></i></a>
+     
+    </div>
+  </div>
+</nav>
+
+
+<div class="max-w-6xl mx-auto p-8 min-h-screen bg-[#fffcfb]">
+  <h1 class="text-green-700 text-3xl font-bold mb-16">+ Card</h1>
+
+  <div id="cart-list" class="space-y-12">
+    <!-- Items appear here -->
+  </div>
+</div>
+<!-- Total Amount Section -->
+  <div class="mt-16 pt-8 border-t-2 border-gray-100 flex justify-between items-center">
+    <h2 class="text-2xl font-bold text-green-700">Total Amount</h2>
+    <span id="total-price" class="text-3xl font-black text-green-700">$0.00</span>
+  </div>
+</div>
+<div class="max-w-6xl mx-auto p-8 bg-[#fffcfb] space-y-12">
+  
+  <!-- Total and Checkout Row -->
+  <div class="flex items-center justify-between">
+    
+    
+    <a href="./checkout.html"><button class="bg-[#ff8a50] text-white px-12 py-3 rounded-lg font-semibold shadow-sm hover:bg-[#f47a40] transition-colors">
+      Checkout
+    </button></a>
+  </div>
+
+  <!-- Coupon Section -->
+  <div class="flex items-center space-x-4">
+    <input 
+      type="text" 
+      placeholder="Coupon Code" 
+      class="bg-gray-200 border border-gray-400 rounded-lg px-4 py-2 w-64 placeholder-green-700 text-green-700 focus:outline-none"
+    >
+    <button class="bg-[#ff8a50] text-white px-8 py-2 rounded-lg font-semibold hover:bg-[#f47a40] transition-colors">
+      Apply Coupon
+    </button>
+  </div>
+
+  <!-- Back to Shopping Button -->
+  <div class="pt-8">
+    <a href="index.html" class="inline-flex items-center bg-gray-200 border border-gray-400 rounded-lg px-6 py-2 text-green-700 font-medium hover:bg-gray-300 transition-colors">
+      <span class="mr-2">←</span> Back To Shopping
+    </a>
+  </div>
+
+</div>
+
+
+
+<script src="./Assets/js/script1.js"></script>
+</body>
+</html>

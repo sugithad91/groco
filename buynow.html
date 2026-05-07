@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind CDN-->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--font awsome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <title>GroCo</title>
+     <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body >
+<nav class="bg-[#fce4d6] px-6 py-10 max-w-7xl mx-auto">
+  <div class="max-w-6xl mx-auto flex items-center justify-between lg:grid lg:grid-cols-3">
+    
+    <!--Logo -->
+    <a href="#" class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl justify-self-start">
+      <i class="fas fa-store text-[#ff7f50]"></i>
+      <span>GroCo</span>
+    </a>
+
+    <!-- Mobile Toggle  -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block text-[#2d5a27]">
+      <i class="fas fa-bars text-2xl"></i>
+    </label>
+
+    <!-- Menu -->
+    <div class="hidden peer-checked:flex flex-col lg:flex lg:flex-row lg:items-center w-full lg:w-auto absolute lg:static top-16 left-0 bg-[#fce4d6] lg:bg-transparent p-5 lg:p-0 z-10 justify-self-center">
+      <ul class="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 text-center text-xl">
+        <li><a href="./index.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Home</a></li>
+        <li><a href="./about.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">About Us</a></li>
+        <li><a href="./catogoried.html" class="text-[#ff7f50] border-b-2 border-[#ff7f50] font-medium">Categories</a></li>
+        <li><a href="./contact.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Icons -->
+    <div class="hidden lg:flex items-center justify-end space-x-6 text-gray-800 text-lg justify-self-end">
+      <a href="" class="hover:text-[#ff7f50]"><i class="fas fa-search"></i></a>
+      <a href="./cart.html" class="hover:text-[#ff7f50]"><i class="fas fa-shopping-cart"></i></a>
+      <a href="./login.html" class="hover:text-[#ff7f50]"><i class="fas fa-user"></i></a>
+     
+    </div>
+  </div>
+</nav>
+
+<div class="flex items-center justify-center min-h-screen bg-[#fff8f6] p-4">
+  <div class="max-w-5xl w-full bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Image Section -->
+      <div class="flex justify-center">
+        <!-- ID: productImage -->
+        <img id="productImage" src="" alt="Loading..." class="max-w-full h-auto md:h-[60vh] object-contain">
+      </div>
+
+      <!-- Info Section -->
+      <div class="space-y-6">
+        <div class="space-y-1">
+          <!-- ID: productName -->
+          <h1 id="productName" class="text-4xl font-bold text-green-700">Loading...</h1>
+          <!-- ID: productCategory -->
+          <p id="productCategory" class="text-2xl text-green-700 opacity-80 font-medium"></p>
+        </div>
+
+        <!-- ID: productPrice -->
+        <div id="productPrice" class="text-5xl font-black text-green-700"></div>
+
+        <div class="flex items-center space-x-1">
+          <span class="text-2xl font-bold text-green-700">4</span>
+          <i class="fas fa-star text-yellow-400"></i>
+        </div>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+          <button onclick="addToCart()" class="flex items-center space-x-2 px-6 py-3 border border-gray-400 rounded-lg hover:bg-gray-50 transition-colors">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="font-medium text-gray-800">Add to Card</span>
+            </button>
+          <a href="./checkout.html"><button class="px-10 py-3 bg-[#ff8a50] text-white font-semibold rounded-lg">
+            Buy Now
+          </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="max-w-7xl mx-auto bg-[#fff8f6] p-8 space-y-12 font-sans">
+
+  <!-- Product Details Section -->
+  <section class="space-y-6">
+    <h2 class="text-green-800 text-xl font-bold">Product Details</h2>
+    <p class="text-green-800/80 text-lg leading-relaxed pl-4 md:pl-12">
+      The Dress was Make by Sof Cotton Cloth . the color was purple.Quantity was one
+    </p>
+  </section>
+
+  <!-- Review Section -->
+  <section class="space-y-6">
+    <h2 class="text-green-800 text-xl font-bold">Review</h2>
+    
+    <div class="pl-4 md:pl-8 space-y-4">
+      <!-- User Info -->
+      <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+        <span class="text-green-700 font-medium text-lg">Maheshwari</span>
+      </div>
+
+      <!-- Review Text -->
+      <div class="space-y-3">
+        <p class="text-green-800 text-lg">
+          The Product Was so fresh Its receive perfectly
+        </p>
+        
+        <!-- Star Rating -->
+        <div class="flex space-x-1">
+          <!-- Mapping 4 stars from the image -->
+           <i class="fas fa-star text-yellow-400"></i>
+           <i class="fas fa-star text-yellow-400"></i>
+           <i class="fas fa-star text-yellow-400"></i>
+           <i class="fas fa-star text-yellow-400"></i>
+          
+        </div>
+      </div>
+      
+    </div>
+
+     <div class="pl-4 md:pl-8 space-y-4">
+      <!-- User Info -->
+      <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
+        <span class="text-green-700 font-medium text-lg">Maheshwari</span>
+      </div>
+
+      <!-- Review Text -->
+      <div class="space-y-3">
+        <p class="text-green-800 text-lg">
+          The Product Was so fresh Its receive perfectly
+        </p>
+        
+        <!-- Star Rating -->
+        <div class="flex space-x-1">
+          <!-- Mapping 4 stars from the image -->
+           <i class="fas fa-star text-yellow-400"></i>
+           <i class="fas fa-star text-yellow-400"></i>
+           <i class="fas fa-star text-yellow-400"></i>
+           <i class="fas fa-star text-yellow-400"></i>
+          
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+</div>
+
+
+
+<footer class="bg-[#fce4d6] py-16 px-6 max-w-7xl mx-auto">
+  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    
+    <!-- Column 1: Brand & Socials -->
+    <div>
+      <div class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl mb-6">
+        <i class="fas fa-store text-[#ff7f50]"></i>
+        <span>GroCo</span>
+      </div>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        Lorem ipsum Dolor, sit Amet Consectetur Adipisicing Elite Earum Aials Volupats Labore Est.Dolorum Tenetur!
+      </p>
+      <div class="flex space-x-3">
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Contact Info -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">contact Info</h3>
+      <ul class="space-y-4 text-gray-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-phone text-[#ff7f50]"></i>
+          <span>+123-9887-0987</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-phone text-[#ff7f50]"></i>
+          <span>+123-9887-0987</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-envelope text-[#ff7f50]"></i>
+          <span>gayauthi@gmail.com</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-map-marker-alt text-[#ff7f50]"></i>
+          <span>Mumbai, India - 9989876</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Quick Links -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">Quick Link</h3>
+      <ul class="space-y-4 text-gray-600">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#" >Products</a></li>
+        <li><a href="#" >Categories</a></li>
+        <li><a href="#" >Review</a></li>
+        <li><a href="#" >Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Newsletter -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">Newsletter</h3>
+      <p class="text-gray-600 mb-6">Subscribe For Latest Updates</p>
+      <input type="email" placeholder="Enter Your Email" class="w-full p-3 bg-[#e5d1c5] rounded-md focus:outline-none mb-4">
+      <button class="px-6 py-2 border-2 border-black rounded-md hover:bg-black hover:text-white transition-colors duration-300">
+        Subscribe
+      </button>
+    </div>
+
+  </div>
+</footer>
+
+<script src="./Assets/js/script1.js"></script>
+</body>
+</html>
+

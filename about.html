@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind CDN-->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--font awsome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <title>GroCo</title>
+     <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body >
+<nav class="bg-[#fce4d6] px-6 py-10 max-w-7xl mx-auto">
+  <div class="max-w-6xl mx-auto flex items-center justify-between lg:grid lg:grid-cols-3">
+    
+    <!--Logo -->
+    <a href="#" class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl justify-self-start">
+      <i class="fas fa-store text-[#ff7f50]"></i>
+      <span>GroCo</span>
+    </a>
+
+    <!-- Mobile Toggle  -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block text-[#2d5a27]">
+      <i class="fas fa-bars text-2xl"></i>
+    </label>
+
+    <!-- Menu -->
+    <div class="hidden peer-checked:flex flex-col lg:flex lg:flex-row lg:items-center w-full lg:w-auto absolute lg:static top-16 left-0 bg-[#fce4d6] lg:bg-transparent p-5 lg:p-0 z-10 justify-self-center">
+      <ul class="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 text-center text-xl">
+        <li><a href="./index.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Home</a></li>
+        <li><a href="./about.html" class="text-[#ff7f50] border-b-2 border-[#ff7f50] font-medium">About Us</a></li>
+        <li><a href="./catogoried.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Categories</a></li>
+        <li><a href="./contact.html" class="text-[#2d5a27] hover:text-[#ff7f50] font-medium transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Icons -->
+    <div class="hidden lg:flex items-center justify-end space-x-6 text-gray-800 text-lg justify-self-end">
+      <a href="" class="hover:text-[#ff7f50]"><i class="fas fa-search"></i></a>
+      <a href="./cart.html" class="hover:text-[#ff7f50]"><i class="fas fa-shopping-cart"></i></a>
+      <a href="./login.html" class="hover:text-[#ff7f50]"><i class="fas fa-user"></i></a>
+     
+    </div>
+  </div>
+</nav>
+
+<section class="bg-[#FEF5F4] pt-16 pb-8 max-w-7xl mx-auto">
+  <div class="container mx-auto px-6 flex flex-col items-center">
+    
+    <!-- Section Heading -->
+    <h2 class="text-[#2E7D32] text-3xl md:text-4xl font-bold mb-10 text-center">
+      About Us
+    </h2>
+
+    <!-- Image Container -->
+    <div class="max-w-2xl w-full rounded-lg overflow-hidden shadow-sm">
+      <img 
+        src="./Assets/images/about.img" 
+        alt="Shopping Illustration" 
+        class="w-full h-auto object-cover"
+      >
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-[#FEF5F4] py-16 px-6 max-w-7xl mx-auto">
+  <div class="max-w-4xl mx-auto space-y-8">
+    
+    <!-- Paragraph 1 -->
+    <p class="text-[#2E7D32] text-lg md:text-xl leading-relaxed">
+      We are a modern fashion brand focused on creating stylish, comfortable, and high-quality clothing for everyday life. Our goal is to offer designs that are both trendy and timeless, giving customers confidence in every outfit they wear.
+    </p>
+
+    <!-- Paragraph 2 -->
+    <p class="text-[#2E7D32] text-lg md:text-xl leading-relaxed">
+      We believe in using good materials, sustainable practices, and thoughtful craftsmanship. Every piece we create is made with attention to detail and a passion for fashion.
+    </p>
+
+    <!-- Paragraph 3 -->
+    <p class="text-[#2E7D32] text-lg md:text-xl leading-relaxed">
+      Our team brings together creativity, experience, and fresh ideas to deliver the best for our customers. We're committed to offering a smooth shopping experience and products that inspire your personal style.
+    </p>
+
+    <!-- Paragraph 4 -->
+    <p class="text-[#2E7D32] text-lg md:text-xl leading-relaxed">
+      Thank you for being a part of our journey. Together, we continue to shape a better and more stylish future.
+    </p>
+
+  </div>
+</section>
+
+
+<footer class="bg-[#fce4d6] py-16 px-6 max-w-7xl mx-auto">
+  <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    
+    <!-- Column 1: Brand & Socials -->
+    <div>
+      <div class="flex items-center space-x-2 text-[#2d5a27] font-bold text-2xl mb-6">
+        <i class="fas fa-store text-[#ff7f50]"></i>
+        <span>GroCo</span>
+      </div>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        Lorem ipsum Dolor, sit Amet Consectetur Adipisicing Elite Earum Aials Volupats Labore Est.Dolorum Tenetur!
+      </p>
+      <div class="flex space-x-3">
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="w-10 h-10 bg-[#e5d1c5] flex items-center justify-center rounded hover:bg-[#ff7f50] hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Contact Info -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">contact Info</h3>
+      <ul class="space-y-4 text-gray-600">
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-phone text-[#ff7f50]"></i>
+          <span>+123-9887-0987</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-phone text-[#ff7f50]"></i>
+          <span>+123-9887-0987</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-envelope text-[#ff7f50]"></i>
+          <span>gayauthi@gmail.com</span>
+        </li>
+        <li class="flex items-center space-x-3">
+          <i class="fas fa-map-marker-alt text-[#ff7f50]"></i>
+          <span>Mumbai, India - 9989876</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Quick Links -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">Quick Link</h3>
+      <ul class="space-y-4 text-gray-600">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#" >Products</a></li>
+        <li><a href="#" >Categories</a></li>
+        <li><a href="#" >Review</a></li>
+        <li><a href="#" >Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Newsletter -->
+    <div>
+      <h3 class="text-[#2d5a27] font-bold text-2xl mb-6 capitalize">Newsletter</h3>
+      <p class="text-gray-600 mb-6">Subscribe For Latest Updates</p>
+      <input type="email" placeholder="Enter Your Email" class="w-full p-3 bg-[#e5d1c5] rounded-md focus:outline-none mb-4">
+      <button class="px-6 py-2 border-2 border-black rounded-md hover:bg-black hover:text-white transition-colors duration-300">
+        Subscribe
+      </button>
+    </div>
+
+  </div>
+</footer>
+
+<script src="./Assets/js/script.js"></script>
+</body>
+</html>
